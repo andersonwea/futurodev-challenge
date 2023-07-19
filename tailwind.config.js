@@ -7,24 +7,26 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors: {
-        'white': '#FFF',
+      backgroundColor: {
+        primary: '#A03333',
+        secondary: '#222',
+      },
 
-        'bg-primary': '#A03333',
-        'bg-secondary': '#222',
+      colors: {
+        white: '#FFF',
 
         'red-500': '#FF0202',
 
         'gray-400': '#B4B4B4',
-        'gray-500': '#787878' 
+        'gray-500': '#787878',
       },
 
       fontFamily: {
-        'title-primary': '--var(title-primary)',
-        'title-secondary': '--var(title-secondary)',
-        'deafult': '--var(deafult)'
-      }
+        'title-primary': 'var(--title-primary)',
+        'title-secondary': 'var(--title-secondary)',
+        default: '--var(deafult)',
+      },
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/forms')],
 }
