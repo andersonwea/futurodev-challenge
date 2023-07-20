@@ -1,8 +1,8 @@
-import { HTMLAttributes } from 'react'
+import { HTMLAttributes, ReactNode } from 'react'
 import { twMerge } from 'tailwind-merge'
 
 interface SubHeadProps extends HTMLAttributes<HTMLHeadingElement> {
-  children: string
+  children: string | ReactNode
   subhead?: boolean
 }
 

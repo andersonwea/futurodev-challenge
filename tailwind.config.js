@@ -42,11 +42,20 @@ module.exports = {
             transform: 'translateX(-30%)',
           },
         },
+        textInfiteAnimation: {
+          '0%': {
+            transform: 'translate3d(0, 0, 0)',
+          },
+          '100%': {
+            transform: 'translate3d(-50%, 0, 0)',
+          },
+        },
       },
 
       animation: {
         fadeRight: 'fadeRight 400ms ease-in-out',
         bounceRight: 'bounceRight 800ms cubic-bezier(0.8,0,1,1) infinite',
+        textInfiteAnimation: 'textInfiteAnimation 15s linear infinite',
       },
     },
   },
