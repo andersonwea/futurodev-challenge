@@ -31,10 +31,22 @@ module.exports = {
           '0%': { opacity: 0, transform: 'translateX(125%)' },
           '100%': { opacity: 1, transform: 'translateY(0)' },
         },
+        bounceRight: {
+          '0%': {
+            transform: 'translateX(-30%)',
+          },
+          '50%': {
+            transform: 'none',
+          },
+          '100%': {
+            transform: 'translateX(-30%)',
+          },
+        },
       },
 
       animation: {
         fadeRight: 'fadeRight 400ms ease-in-out',
+        bounceRight: 'bounceRight 800ms cubic-bezier(0.8,0,1,1) infinite',
       },
     },
   },
