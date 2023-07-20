@@ -8,19 +8,21 @@ import * as DropdownMenu from '@radix-ui/react-dropdown-menu'
 export function NavBar() {
   return (
     <div className="flex gap-7 items-center">
-      <nav className="space-x-7 max-md:hidden">
+      <nav className="space-x-7 flex items-center max-md:hidden">
         <NavLink href="#about">SOBRE</NavLink>
         <NavLink href="#services">SERVIÇOS</NavLink>
         <NavLink href="#prices">PREÇOS</NavLink>
         <NavLink href="#equipments">EQUIPAMENTOS</NavLink>
 
-        <Button>REGISTRE-SE</Button>
+        <Button className="hover:bg-red-500 transition-colors">
+          REGISTRE-SE
+        </Button>
       </nav>
 
       <DropdownMenu.Root>
         <DropdownMenu.Trigger asChild className="md:hidden">
           <button
-            className="w-9 rounded-md border-2 border-gray-500"
+            className="w-12 rounded-md border-2 border-gray-400"
             aria-label="Menu de navegação"
           >
             <Menu size={32} />
