@@ -6,7 +6,10 @@ interface NavLinkProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
 
 export function NavLink({ children, ...props }: NavLinkProps) {
   return (
-    <a className="font-title-secondary text-2xl font-normal" {...props}>
+    <a
+      className="font-title-secondary text-2xl font-normal max-md:text-[#222]"
+      {...props}
+    >
       {children}
     </a>
   )

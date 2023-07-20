@@ -26,6 +26,16 @@ module.exports = {
         'title-secondary': 'var(--title-secondary)',
         default: '--var(deafult)',
       },
+      keyframes: {
+        fadeRight: {
+          '0%': { opacity: 0, transform: 'translateX(125%)' },
+          '100%': { opacity: 1, transform: 'translateY(0)' },
+        },
+      },
+
+      animation: {
+        fadeRight: 'fadeRight 400ms ease-in-out',
+      },
     },
   },
   plugins: [require('@tailwindcss/forms')],
