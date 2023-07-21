@@ -8,6 +8,12 @@ import { ArrowRight } from 'lucide-react'
 import bannerImg from '../assets/pngwing1.png'
 import Image from 'next/image'
 import { TextLoop } from '@/components/TextLoop'
+import { DifferentialCard } from '@/components/DifferentialCard'
+
+import sport1 from '../assets/sport1.svg'
+import dumbbell from '../assets/dumbbell.svg'
+import trainer1 from '../assets/trainer1.svg'
+import gym1 from '../assets/gym1.svg'
 
 export default function Home() {
   return (
@@ -19,7 +25,7 @@ export default function Home() {
           <div>
             <Head className="max-lg:text-[3.5rem]">
               AQUI NAO SE{' '}
-              <SubHead subhead className="text-8xl block max-lg:text-7xl">
+              <SubHead className="text-8xl block max-lg:text-7xl">
                 TREINA FOFO
               </SubHead>
             </Head>
@@ -44,6 +50,41 @@ export default function Home() {
       </Container>
 
       <TextLoop />
+
+      <Container>
+        <Head className="flex items-center justify-center gap-2 mt-28 text-6xl max-lg:mt-16 max-sm:block max-sm:text-center">
+          NOSSOS <SubHead className="text-7xl">DIFERENCIAIS</SubHead>
+        </Head>
+
+        <div className="grid grid-cols-4 gap-2 mt-7 max-lg:grid-cols-2 max-sm:gap-0">
+          <DifferentialCard
+            icon={sport1}
+            title="equipe qualificada"
+            text="Profissionais altamente capacitados e motivados a ajudá-lo a alcançar seus objetivos."
+            buttonText="conheça nossos profissionais"
+          />
+          <DifferentialCard
+            icon={dumbbell}
+            title="Ambiente motivador"
+            text="Um ambiente seguro e inspirador para ajudá-lo a manter-se motivado durante seus treinos."
+            buttonText="Faça um tour
+            virtual"
+          />
+          <DifferentialCard
+            icon={trainer1}
+            title="Aulas Diversas"
+            text="Oferecemos uma ampla variedade de aulas, desde musculação até dança, para atender a todos os interesses."
+            buttonText="Ver modalidades"
+          />
+          <DifferentialCard
+            icon={gym1}
+            title="Equipamentos Modernos"
+            text="Mantemos nossos equipamentos atualizados para garantir a segurança e eficiência de nossos clientes."
+            buttonText="faça um tour
+            virtual"
+          />
+        </div>
+      </Container>
     </>
   )
 }
