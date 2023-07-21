@@ -7,11 +7,11 @@ interface SubHeadProps extends HTMLAttributes<HTMLHeadingElement> {
 }
 
 export function SubHead({ children, subhead = false, ...rest }: SubHeadProps) {
-  if (!subhead) {
+  if (subhead) {
     return (
-      <h1 className={twMerge('text-7xl font-title-secondary', rest.className)}>
+      <h2 className={twMerge('text-7xl font-title-secondary', rest.className)}>
         {children}
-      </h1>
+      </h2>
     )
   }
 
