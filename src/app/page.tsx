@@ -18,11 +18,14 @@ import sport1 from '../assets/sport1.svg'
 import dumbbell from '../assets/dumbbell.svg'
 import trainer1 from '../assets/trainer1.svg'
 import gym1 from '../assets/gym1.svg'
+import pngwing2 from '../assets/pngwing2.png'
+import { title } from 'process'
+import { text } from 'stream/consumers'
 
 export default function Home() {
   return (
     <>
-      <Container>
+      <Container section>
         <Header />
 
         <div className="grid grid-cols-2 gap-16 items-center max-lg:gap-2 max-md:grid-cols-1 max-md:mt-10">
@@ -55,7 +58,7 @@ export default function Home() {
 
       <TextLoop />
 
-      <Container>
+      <Container section>
         <Head className="flex items-center justify-center gap-2 mt-28 text-6xl max-lg:mt-16 max-sm:block max-sm:text-center">
           NOSSOS <SubHead className="text-7xl">DIFERENCIAIS</SubHead>
         </Head>
@@ -90,7 +93,7 @@ export default function Home() {
         </div>
       </Container>
 
-      <section className="bg-secondary">
+      <section className="bg-secondary pb-12">
         <Container>
           <SubHead subhead className="text-center mt-14">
             nossos planos
@@ -119,6 +122,47 @@ export default function Home() {
           </div>
         </Container>
       </section>
+
+      <Container
+        section
+        className="grid grid-cols-[432px_1fr] pt-16 gap-8 max-lg:grid-cols-1 max-lg:pt-6"
+      >
+        <div>
+          <Image
+            className="max-lg:hidden"
+            src={pngwing2}
+            alt="duas pessoas segutando alteres"
+            width={432}
+            height={576}
+            quality={80}
+          />
+        </div>
+
+        <div className="self-center">
+          <Head className="text-6xl max-lg:text-center">
+            faça parte <SubHead>da família</SubHead>
+          </Head>
+          <Text className="mt-2 max-lg:text-center">
+            Nossa academia tem milhares de clientes satisfeitos com resultados
+            surpreendentes. Junte-se a nós e comece a transformar seu corpo
+            agora!
+          </Text>
+          <div className="flex space-x-8 mt-16">
+            <div>
+              <SubHead>+15</SubHead>
+              <Text>Unidades na cidade de São Paulo.</Text>
+            </div>
+            <div>
+              <SubHead>+2000</SubHead>
+              <Text>Alunos matriculados em nossas unidades.</Text>
+            </div>
+            <div>
+              <SubHead>+100</SubHead>
+              <Text>Professores altamente qualificados.</Text>
+            </div>
+          </div>
+        </div>
+      </Container>
     </>
   )
 }
