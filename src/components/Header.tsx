@@ -7,7 +7,7 @@ export function Header() {
   return (
     <header className="flex items-center justify-between">
       <Link href={'/'}>
-        <Image src={logo} alt="logo do Robust Habit" />
+        <Image src={logo} alt="logo do Robust Habit" className="max-sm:w-24" />
       </Link>
 
       <NavBar />
