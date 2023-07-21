@@ -24,7 +24,7 @@ module.exports = {
       fontFamily: {
         'title-primary': 'var(--title-primary)',
         'title-secondary': 'var(--title-secondary)',
-        default: '--var(deafult)',
+        default: 'var(--default)',
       },
       keyframes: {
         fadeRight: {

@@ -9,7 +9,11 @@ import bannerImg from '../assets/pngwing1.png'
 import Image from 'next/image'
 import { TextLoop } from '@/components/TextLoop'
 import { DifferentialCard } from '@/components/DifferentialCard'
+import { SubscriptionCard } from '@/components/SubscriptionCard'
 
+import subscriptionImage1 from '../assets/subscriptionImage1.png'
+import subscriptionImage2 from '../assets/subscriptionImage2.png'
+import subscriptionImage3 from '../assets/subscriptionImage3.png'
 import sport1 from '../assets/sport1.svg'
 import dumbbell from '../assets/dumbbell.svg'
 import trainer1 from '../assets/trainer1.svg'
@@ -56,7 +60,7 @@ export default function Home() {
           NOSSOS <SubHead className="text-7xl">DIFERENCIAIS</SubHead>
         </Head>
 
-        <div className="grid grid-cols-4 gap-2 mt-7 max-lg:grid-cols-2 max-sm:gap-0">
+        <div className="grid grid-cols-4 gap-2 mt-7 mb-7 max-lg:grid-cols-2 max-sm:gap-0">
           <DifferentialCard
             icon={sport1}
             title="equipe qualificada"
@@ -85,6 +89,36 @@ export default function Home() {
           />
         </div>
       </Container>
+
+      <section className="bg-secondary">
+        <Container>
+          <SubHead subhead className="text-center mt-14">
+            nossos planos
+          </SubHead>
+
+          <div className="grid grid-cols-3 gap-10 items-end mt-12">
+            <SubscriptionCard
+              image={subscriptionImage1}
+              title="passe de 1 dia"
+              text="Teste 
+              gratuitamente"
+            />
+            <SubscriptionCard
+              popular={true}
+              image={subscriptionImage2}
+              title="passe de 1 MÊS"
+              text="À partir de"
+              price="R$ 99,90"
+            />
+            <SubscriptionCard
+              image={subscriptionImage3}
+              title="passe de 1 ANO"
+              text="À partir de"
+              price="R$ 999,00"
+            />
+          </div>
+        </Container>
+      </section>
     </>
   )
 }
