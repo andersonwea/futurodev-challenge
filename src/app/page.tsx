@@ -96,7 +96,7 @@ export default function Home() {
             nossos planos
           </SubHead>
 
-          <div className="grid grid-cols-3 gap-10 items-end mt-12">
+          <div className="grid grid-cols-3 gap-10 items-end mt-12 max-md:grid-cols-1 max-sm:max-w-xs max-md:mx-auto">
             <SubscriptionCard
               image={subscriptionImage1}
               title="passe de 1 dia"
