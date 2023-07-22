@@ -19,8 +19,8 @@ import dumbbell from '../assets/dumbbell.svg'
 import trainer1 from '../assets/trainer1.svg'
 import gym1 from '../assets/gym1.svg'
 import pngwing2 from '../assets/pngwing2.png'
-import { title } from 'process'
-import { text } from 'stream/consumers'
+import pngwing3 from '../assets/pngwing3.png'
+import { TextInput } from '@/components/Input'
 
 export default function Home() {
   return (
@@ -125,7 +125,7 @@ export default function Home() {
 
       <Container
         section
-        className="grid grid-cols-[432px_1fr] pt-16 gap-8 max-lg:grid-cols-1 max-lg:pt-6"
+        className="grid grid-cols-[432px_1fr] pt-16 gap-8 max-lg:grid-cols-1 max-lg:pt-6 max-lg:pb-8"
       >
         <div>
           <Image
@@ -163,6 +163,34 @@ export default function Home() {
           </div>
         </div>
       </Container>
+
+      <section className="bg-secondary pt-16 max-lg:pt-8">
+        <Container className="grid grid-cols-[2fr_1fr] max-sm:grid-cols-1">
+          <div className="space-y-7">
+            <SubHead>entre em contato</SubHead>
+            <Text>
+              Matricule-se agora mesmo! Fale com um de nossos atendentes
+            </Text>
+            <div className="flex gap-7">
+              <TextInput placeholder="nome" />
+              <TextInput placeholder="telefone" />
+            </div>
+
+            <Button className="bg-red-500 w-56 hover:brightness-90 transition-colors">
+              solicitar contato
+            </Button>
+          </div>
+
+          <div className="-mt-52 max-lg:-mt-14 max-sm:hidden">
+            <Image
+              src={pngwing3}
+              alt="uma mulher segurando anilhas de peso"
+              width={440}
+              height={617}
+            />
+          </div>
+        </Container>
+      </section>
     </>
   )
 }
