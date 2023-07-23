@@ -9,7 +9,7 @@ body {
 }
 
 html {
-  @apply max-sm:text-[10px] max-md:text-[12px] max-lg:text-[14px] scroll-smooth
+  @apply max-sm:text-[12px] max-md:text-[12px] max-lg:text-[14px] scroll-smooth
 }
 
 body::-webkit-scrollbar {

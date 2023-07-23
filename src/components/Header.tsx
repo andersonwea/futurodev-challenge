@@ -26,7 +26,7 @@ export function Header() {
 
   return (
     <header
-      className={`w-full pt-4 max-lg:px-4 fixed  py-2 max-md:z-50${
+      className={`w-full pt-4 max-lg:px-4 fixed  py-2 z-50${
         distance < -60 ? ' backdrop-blur-md bg-white/30' : ''
       } `}
     >
