@@ -4,7 +4,7 @@ import * as Dialog from '@radix-ui/react-dialog'
 
 import { Button } from './Button'
 import { TextInput } from './Input'
-import googleIcon from '../assets/googleIcon.png'
+import googleIcon from '../assets/icons/googleIcon.png'
 import Image from 'next/image'
 import { SubHead } from './SubHead'
 import { X } from 'lucide-react'

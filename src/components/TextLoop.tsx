@@ -1,5 +1,5 @@
 import { SubHead } from './SubHead'
-import barbellIcon from '../assets/barbellIcon.svg'
+import barbellIcon from '../assets/icons/barbellIcon.svg'
 import Image from 'next/image'
 
 export function TextLoop() {

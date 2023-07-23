@@ -17,11 +17,9 @@ export function Header() {
   }
 
   useEffect(() => {
-    if (window.innerWidth < 768) {
-      window.addEventListener('scroll', handleScroll)
-      return () => {
-        window.removeEventListener('scroll', handleScroll)
-      }
+    window.addEventListener('scroll', handleScroll)
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
     }
   }, [])
 

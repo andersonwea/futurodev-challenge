@@ -25,7 +25,7 @@ export function SubscriptionCard({
           recomendado por usuários
         </Text>
       )}
-      <Image src={image} alt="" />
+      <Image src={image} alt="" width={399} height={168} />
       <SubHead
         subhead
         className={`text-4xl p-3 max-lg:text-3xl ${

@@ -4,24 +4,24 @@ import { Head } from '@/components/Head'
 import { Header } from '@/components/Header'
 import { SubHead } from '@/components/SubHead'
 import { Text } from '@/components/Text'
-import { ArrowRight } from 'lucide-react'
-import bannerImg from '../assets/pngwing1.png'
 import Image from 'next/image'
 import { TextLoop } from '@/components/TextLoop'
 import { DifferentialCard } from '@/components/DifferentialCard'
 import { SubscriptionCard } from '@/components/SubscriptionCard'
-
-import subscriptionImage1 from '../assets/subscriptionImage1.png'
-import subscriptionImage2 from '../assets/subscriptionImage2.png'
-import subscriptionImage3 from '../assets/subscriptionImage3.png'
-import sport1 from '../assets/sport1.svg'
-import dumbbell from '../assets/dumbbell.svg'
-import trainer1 from '../assets/trainer1.svg'
-import gym1 from '../assets/gym1.svg'
-import pngwing2 from '../assets/pngwing2.png'
-import pngwing3 from '../assets/pngwing3.png'
 import { TextInput } from '@/components/Input'
 import { Footer } from '@/components/Footer'
+
+import { ArrowRight } from 'lucide-react'
+import bannerImg from '../assets/pngwing1.png'
+import subscriptionImage1 from '../assets/subscriptions/subscriptionImage1.png'
+import subscriptionImage2 from '../assets/subscriptions/subscriptionImage2.png'
+import subscriptionImage3 from '../assets/subscriptions/subscriptionImage3.png'
+import sport1 from '../assets/icons/sport1.svg'
+import dumbbell from '../assets/icons/dumbbell.svg'
+import trainer1 from '../assets/icons/trainer1.svg'
+import gym1 from '../assets/icons/gym1.svg'
+import pngwing2 from '../assets/pngwing2.png'
+import pngwing3 from '../assets/pngwing3.png'
 
 export default function Home() {
   return (
@@ -183,7 +183,7 @@ export default function Home() {
             <Text>
               Matricule-se agora mesmo! Fale com um de nossos atendentes
             </Text>
-            <div className="flex gap-7">
+            <div className="flex gap-7 max-w-md">
               <TextInput placeholder="nome" />
               <TextInput placeholder="telefone" />
             </div>
@@ -203,6 +203,7 @@ export default function Home() {
           </div>
         </Container>
       </section>
+
       <Footer />
     </>
   )
