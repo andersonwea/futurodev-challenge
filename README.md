@@ -1,34 +1,55 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Robust Habit - Landing Page da Academia
 
-## Getting Started
+Bem-vindo ao repositório do projeto Robust Habit, uma landing page da academia que busca promover um estilo de vida saudável e ativo. Este projeto foi desenvolvido utilizando as tecnologias React, Next.js e Tailwind CSS para proporcionar uma experiência de usuário moderna e responsiva. 
 
-First, run the development server:
+### Confira o deploy do projeto [Link](https://robust-habit-one.vercel.app)
+
+## Tecnologias Utilizadas
+
+- React: Uma biblioteca JavaScript popular para a construção de interfaces de usuário interativas.
+- Next.js: Um framework React que permite a criação de páginas estáticas e renderizadas pelo servidor, o que melhora significativamente o tempo de carregamento da página.
+- Tailwind CSS: Um framework CSS altamente customizável e utilitário que facilita o design e desenvolvimento de interfaces responsivas.
+Como Rodar o Projeto Localmente
+Para executar o projeto Robust Habit em sua máquina local, siga os passos abaixo:
+
+## Pré-requisitos
+
+Antes de começar, certifique-se de ter as seguintes ferramentas instaladas em sua máquina:
+
+1. Node.js: https://nodejs.org (versão recomendada: 12 ou superior)
+2. npm (Node Package Manager): Normalmente é instalado juntamente com o Node.js.
+
+## Clonar o repositório
+
+Abra o terminal ou prompt de comando e navegue até o diretório onde deseja clonar o repositório. Em seguida, execute o seguinte comando:
+
+```bash
+git clone https://github.com/andersonwea/robust-habit.git
+```
+
+## Instalar dependências
+
+Navegue até o diretório do projeto clonado e instale as dependências usando o npm:
+
+```bash
+cd robust-habit
+npm install
+```
+
+## Rodar o projeto em modo de desenvolvimento
+
+Após a instalação das dependências, você pode iniciar o servidor de desenvolvimento local com o seguinte comando:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+O servidor de desenvolvimento será iniciado e a aplicação estará disponível em http://localhost:3000. Você poderá acessar esta URL em seu navegador para visualizar a landing page da academia Robust Habit.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Contribuição
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Se você deseja contribuir para este projeto, fique à vontade para abrir uma "Pull Request" com suas melhorias ou correções. Teremos prazer em analisar e integrar suas contribuições.
 
-## Learn More
+Esperamos que este projeto seja útil e que possa servir de aprendizado para você explorar o uso de React, Next.js e Tailwind CSS em seus próprios projetos. Caso tenha alguma dúvida ou precise de ajuda, sinta-se à vontade para abrir uma "Issue" aqui no repositório.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Divirta-se desenvolvendo e construindo o futuro saudável com o Robust Habit! 💪🏋️‍♀️🏃‍♂️
