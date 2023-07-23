@@ -43,7 +43,7 @@ export function Footer() {
             <NavLink href="#about">sobre</NavLink>
             <NavLink href="#services">serviços</NavLink>
             <NavLink href="#prices">preços</NavLink>
-            <NavLink href="#equipments">contato</NavLink>
+            <NavLink href="#contact">contato</NavLink>
           </nav>
         </div>
 
