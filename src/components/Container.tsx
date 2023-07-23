@@ -22,9 +22,7 @@ export function Container({
   }
 
   return (
-    <div
-      className={twMerge('max-w-[1200px] px-4 mx-auto py-3', rest.className)}
-    >
+    <div className={twMerge('max-w-[1200px] px-4 mx-auto', rest.className)}>
       {children}
     </div>
   )
