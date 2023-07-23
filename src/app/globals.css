@@ -11,3 +11,13 @@ body {
 html {
   @apply max-sm:text-[10px] max-md:text-[12px] max-lg:text-[14px] scroll-smooth
 }
+
+body::-webkit-scrollbar {
+  width: 10px;
+  background: #e3dbd4;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #222;
+  border-radius: 10px;
+}
