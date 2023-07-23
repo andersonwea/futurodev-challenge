@@ -21,81 +21,90 @@ import gym1 from '../assets/gym1.svg'
 import pngwing2 from '../assets/pngwing2.png'
 import pngwing3 from '../assets/pngwing3.png'
 import { TextInput } from '@/components/Input'
+import { Footer } from '@/components/Footer'
 
 export default function Home() {
   return (
     <>
-      <Container section>
-        <Header />
+      <main id="about">
+        <Container section>
+          <Header />
 
-        <div className="grid grid-cols-2 gap-16 items-center max-lg:gap-2 max-md:grid-cols-1 max-md:mt-10">
-          <div>
-            <Head className="max-lg:text-[3.5rem]">
-              AQUI NAO SE{' '}
-              <SubHead className="text-8xl block max-lg:text-7xl">
-                TREINA FOFO
-              </SubHead>
-            </Head>
-            <Text className="max-w-lg">
-              Transforme-se na nossa academia! Oferecemos equipamentos modernos,
-              instrutores qualificados e aulas para todos os níveis. Alcance
-              seus objetivos fitness conosco. Experimente hoje!
-            </Text>
-            <Button className="mt-7 group hover:bg-red-500 transition-colors">
-              COMEÇAR <ArrowRight className="group-hover:animate-bounceRight" />
-            </Button>
+          <div
+            id="top"
+            className="grid grid-cols-2 gap-16 items-center max-lg:gap-2 max-md:grid-cols-1 pt-[70px]"
+          >
+            <div>
+              <Head className="max-lg:text-[3.5rem]">
+                AQUI NAO SE{' '}
+                <SubHead className="text-8xl block max-lg:text-7xl">
+                  TREINA FOFO
+                </SubHead>
+              </Head>
+              <Text className="max-w-lg">
+                Transforme-se na nossa academia! Oferecemos equipamentos
+                modernos, instrutores qualificados e aulas para todos os níveis.
+                Alcance seus objetivos fitness conosco. Experimente hoje!
+              </Text>
+              <Button className="mt-7 group hover:bg-red-500 transition-colors">
+                COMEÇAR{' '}
+                <ArrowRight className="group-hover:animate-bounceRight" />
+              </Button>
+            </div>
+
+            <Image
+              className="max-md:hidden"
+              src={bannerImg}
+              alt="Um homem praticando musculação"
+              width={477}
+              height={627}
+            />
           </div>
-
-          <Image
-            className="max-md:hidden"
-            src={bannerImg}
-            alt="Um homem praticando musculação"
-            width={477}
-            height={627}
-          />
-        </div>
-      </Container>
+        </Container>
+      </main>
 
       <TextLoop />
 
-      <Container section>
-        <Head className="flex items-center justify-center gap-2 mt-28 text-6xl max-lg:mt-16 max-sm:block max-sm:text-center">
-          NOSSOS <SubHead className="text-7xl">DIFERENCIAIS</SubHead>
-        </Head>
+      <section id="services">
+        <Container section className="mt-8">
+          <Head className="flex items-center justify-center gap-2 text-6xl max-sm:block max-sm:text-center">
+            NOSSOS <SubHead className="text-7xl">DIFERENCIAIS</SubHead>
+          </Head>
 
-        <div className="grid grid-cols-4 gap-2 mt-7 mb-7 max-lg:grid-cols-2 max-sm:gap-0">
-          <DifferentialCard
-            icon={sport1}
-            title="equipe qualificada"
-            text="Profissionais altamente capacitados e motivados a ajudá-lo a alcançar seus objetivos."
-            buttonText="conheça nossos profissionais"
-          />
-          <DifferentialCard
-            icon={dumbbell}
-            title="Ambiente motivador"
-            text="Um ambiente seguro e inspirador para ajudá-lo a manter-se motivado durante seus treinos."
-            buttonText="Faça um tour
+          <div className="grid grid-cols-4 gap-2 mt-7 mb-7 max-lg:grid-cols-2 max-sm:gap-0">
+            <DifferentialCard
+              icon={sport1}
+              title="equipe qualificada"
+              text="Profissionais altamente capacitados e motivados a ajudá-lo a alcançar seus objetivos."
+              buttonText="conheça nossos profissionais"
+            />
+            <DifferentialCard
+              icon={dumbbell}
+              title="Ambiente motivador"
+              text="Um ambiente seguro e inspirador para ajudá-lo a manter-se motivado durante seus treinos."
+              buttonText="Faça um tour
             virtual"
-          />
-          <DifferentialCard
-            icon={trainer1}
-            title="Aulas Diversas"
-            text="Oferecemos uma ampla variedade de aulas, desde musculação até dança, para atender a todos os interesses."
-            buttonText="Ver modalidades"
-          />
-          <DifferentialCard
-            icon={gym1}
-            title="Equipamentos Modernos"
-            text="Mantemos nossos equipamentos atualizados para garantir a segurança e eficiência de nossos clientes."
-            buttonText="faça um tour
+            />
+            <DifferentialCard
+              icon={trainer1}
+              title="Aulas Diversas"
+              text="Oferecemos uma ampla variedade de aulas, desde musculação até dança, para atender a todos os interesses."
+              buttonText="Ver modalidades"
+            />
+            <DifferentialCard
+              icon={gym1}
+              title="Equipamentos Modernos"
+              text="Mantemos nossos equipamentos atualizados para garantir a segurança e eficiência de nossos clientes."
+              buttonText="faça um tour
             virtual"
-          />
-        </div>
-      </Container>
+            />
+          </div>
+        </Container>
+      </section>
 
-      <section className="bg-secondary pb-12">
+      <section id="prices" className="bg-secondary pb-12 pt-8">
         <Container>
-          <SubHead subhead className="text-center mt-14">
+          <SubHead subhead className="text-center">
             nossos planos
           </SubHead>
 
@@ -125,7 +134,7 @@ export default function Home() {
 
       <Container
         section
-        className="grid grid-cols-[432px_1fr] pt-16 gap-8 max-lg:grid-cols-1 max-lg:pt-6 max-lg:pb-8"
+        className="grid justify-start grid-cols-[432px_1fr] gap-8 max-lg:grid-cols-1 max-lg:pb-8"
       >
         <div>
           <Image
@@ -164,10 +173,13 @@ export default function Home() {
         </div>
       </Container>
 
-      <section className="bg-secondary pt-16 max-lg:pt-8">
+      <section
+        id="contact"
+        className="bg-secondary pt-16 max-lg:pt-8 max-sm:pb-8"
+      >
         <Container className="grid grid-cols-[2fr_1fr] max-sm:grid-cols-1">
-          <div className="space-y-7">
-            <SubHead>entre em contato</SubHead>
+          <div className="space-y-7 max-lg:space-y-4">
+            <SubHead subhead>entre em contato</SubHead>
             <Text>
               Matricule-se agora mesmo! Fale com um de nossos atendentes
             </Text>
@@ -191,6 +203,7 @@ export default function Home() {
           </div>
         </Container>
       </section>
+      <Footer />
     </>
   )
 }
