@@ -4,8 +4,10 @@ import { Text } from './Text'
 import { Button } from './Button'
 import { ArrowRight } from 'lucide-react'
 import { StaticImport } from 'next/dist/shared/lib/get-img-props'
+import { twMerge } from 'tailwind-merge'
+import { HTMLAttributes } from 'react'
 
-interface differentialCardProps {
+interface differentialCardProps extends HTMLAttributes<HTMLDivElement> {
   icon: StaticImport
   title: string
   text: string
@@ -17,9 +19,15 @@ export function DifferentialCard({
   title,
   text,
   buttonText,
+  ...rest
 }: differentialCardProps) {
   return (
-    <div className="flex flex-col justify-between p-6 group hover:bg-secondary transition-colors max-sm:p-3">
+    <div
+      className={twMerge(
+        'flex flex-col justify-between p-6 group hover:bg-secondary transition-colors max-sm:p-3',
+        rest.className,
+      )}
+    >
       <div>
         <Image
           src={icon}

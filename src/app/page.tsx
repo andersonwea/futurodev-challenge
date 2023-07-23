@@ -22,6 +22,40 @@ import trainer1 from '../assets/icons/trainer1.svg'
 import gym1 from '../assets/icons/gym1.svg'
 import pngwing2 from '../assets/pngwing2.png'
 import pngwing3 from '../assets/pngwing3.png'
+import { title } from 'process'
+import { text } from 'stream/consumers'
+import { Slider } from '@/components/Slider'
+
+const cards = [
+  {
+    id: 1,
+    icon: sport1,
+    title: 'equipe qualificada',
+    text: 'Profissionais altamente capacitados e motivados a ajudá-lo a alcançar seus objetivos.',
+    buttonText: 'conheça nossos profissionais',
+  },
+  {
+    id: 2,
+    icon: dumbbell,
+    title: 'Ambiente motivador',
+    text: 'Um ambiente seguro e inspirador para ajudá-lo a manter-se motivado durante seus treinos.',
+    buttonText: 'Faça um tour virtual',
+  },
+  {
+    id: 3,
+    icon: trainer1,
+    title: 'Aulas Diversas',
+    text: 'Oferecemos uma ampla variedade de aulas, desde musculação até dança, para atender a todos os interesses.',
+    buttonText: 'Ver modalidades',
+  },
+  {
+    id: 4,
+    icon: gym1,
+    title: 'Equipamentos Modernos',
+    text: 'Mantemos nossos equipamentos atualizados para garantir a segurança e eficiência de nossos clientes',
+    buttonText: 'faça um tour virtual',
+  },
+]
 
 export default function Home() {
   return (
@@ -70,34 +104,7 @@ export default function Home() {
             NOSSOS <SubHead className="text-7xl">DIFERENCIAIS</SubHead>
           </Head>
 
-          <div className="grid grid-cols-4 gap-2 mt-7 mb-7 max-lg:grid-cols-2 max-sm:gap-0">
-            <DifferentialCard
-              icon={sport1}
-              title="equipe qualificada"
-              text="Profissionais altamente capacitados e motivados a ajudá-lo a alcançar seus objetivos."
-              buttonText="conheça nossos profissionais"
-            />
-            <DifferentialCard
-              icon={dumbbell}
-              title="Ambiente motivador"
-              text="Um ambiente seguro e inspirador para ajudá-lo a manter-se motivado durante seus treinos."
-              buttonText="Faça um tour
-            virtual"
-            />
-            <DifferentialCard
-              icon={trainer1}
-              title="Aulas Diversas"
-              text="Oferecemos uma ampla variedade de aulas, desde musculação até dança, para atender a todos os interesses."
-              buttonText="Ver modalidades"
-            />
-            <DifferentialCard
-              icon={gym1}
-              title="Equipamentos Modernos"
-              text="Mantemos nossos equipamentos atualizados para garantir a segurança e eficiência de nossos clientes."
-              buttonText="faça um tour
-            virtual"
-            />
-          </div>
+          <Slider cards={cards} />
         </Container>
       </section>
 
