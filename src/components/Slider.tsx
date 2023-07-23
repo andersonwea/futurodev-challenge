@@ -29,7 +29,7 @@ export function Slider({ cards }: SliderProps) {
     },
   })
 
-  function handleResize() {
+  useEffect(() => {
     const sm = window.matchMedia('(max-width: 640px)')
     const md = window.matchMedia('(max-width: 1024px)')
     const lg = window.matchMedia('(min-width: 1024px)')
@@ -37,13 +37,6 @@ export function Slider({ cards }: SliderProps) {
     if (lg.matches) setSlidesPerView(4)
     if (md.matches) setSlidesPerView(3)
     if (sm.matches) setSlidesPerView(2)
-  }
-
-  useEffect(() => {
-    window.addEventListener('resize', handleResize)
-    return () => {
-      window.removeEventListener('resize', handleResize)
-    }
   }, [])
 
   return (

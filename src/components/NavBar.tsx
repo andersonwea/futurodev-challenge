@@ -33,7 +33,7 @@ export function NavBar() {
       <DropdownMenu.Root>
         <DropdownMenu.Trigger asChild className="md:hidden">
           <button
-            className="w-12 rounded-md border-2 border-gray-400 max-sm:w-14"
+            className="w-12 rounded-md border-2 border-gray-400"
             aria-label="Menu de navegação"
           >
             <Menu size={32} />
