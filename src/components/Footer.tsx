@@ -24,7 +24,7 @@ export function Footer() {
 
   return (
     <footer className="pt-12 pb-4 max-sm:pt-6">
-      <Container className="grid grid-cols-[3fr_1fr_2fr] gap-5 max-sm:grid-cols-1 max-sm:space-y-4">
+      <Container className="grid grid-cols-[3fr_1fr_3fr] gap-5 max-sm:grid-cols-1 max-sm:space-y-4">
         <div>
           <Logo />
           <div className="mt-9 max-sm:mt-4">
@@ -51,7 +51,7 @@ export function Footer() {
           <SubHead subhead className="text-3xl">
             veja no instagram
           </SubHead>
-          <div className="mt-9 flex flex-wrap gap-2 pt-4 max-w-[335px] max-sm:mt-0">
+          <div className="mt-9 flex flex-wrap gap-2 pt-4 max-w-[400px] max-sm:mt-0">
             {instagramPosts.map((instagramPost, i) => {
               return (
                 <a
@@ -61,6 +61,7 @@ export function Footer() {
                   rel="noreferrer"
                 >
                   <Image
+                    className="w-auto max-sm:w-[100px] object-cover"
                     src={instagramPost}
                     alt="postagem do instagram"
                     width={105}
