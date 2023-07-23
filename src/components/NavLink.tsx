@@ -1,14 +1,18 @@
 import { AnchorHTMLAttributes } from 'react'
+import { twMerge } from 'tailwind-merge'
 
 interface NavLinkProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
   children: string
 }
 
-export function NavLink({ children, ...props }: NavLinkProps) {
+export function NavLink({ children, ...rest }: NavLinkProps) {
   return (
     <a
-      className="font-title-secondary text-2xl font-normal max-md:text-[#222] hover:text-zinc-200"
-      {...props}
+      className={twMerge(
+        'font-title-secondary text-white text-2xl font-normal hover:text-zinc-200',
+        rest.className,
+      )}
+      {...rest}
     >
       {children}
     </a>
