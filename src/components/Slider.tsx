@@ -22,10 +22,6 @@ interface SliderProps {
 export function Slider({ cards }: SliderProps) {
   const [slidesPerView, setSlidesPerView] = useState(4)
 
-  const sm = window.matchMedia('(max-width: 640px)')
-  const md = window.matchMedia('(max-width: 1024px)')
-  const lg = window.matchMedia('(min-width: 1024px)')
-
   const [sliderRef] = useKeenSlider({
     slides: {
       perView: slidesPerView,
@@ -34,6 +30,10 @@ export function Slider({ cards }: SliderProps) {
   })
 
   function handleResize() {
+    const sm = window.matchMedia('(max-width: 640px)')
+    const md = window.matchMedia('(max-width: 1024px)')
+    const lg = window.matchMedia('(min-width: 1024px)')
+
     if (lg.matches) setSlidesPerView(4)
     if (md.matches) setSlidesPerView(3)
     if (sm.matches) setSlidesPerView(2)
