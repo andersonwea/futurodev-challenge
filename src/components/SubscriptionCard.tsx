@@ -19,7 +19,7 @@ export function SubscriptionCard({
   price,
 }: SubscriptionCardProps) {
   return (
-    <div>
+    <div className="max-w-[399px] mx-auto">
       {popular && (
         <Text className="p-1 bg-red-500 font-bold text-center uppercase leading-5">
           recomendado por usuários
