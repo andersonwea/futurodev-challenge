@@ -1,5 +1,7 @@
 # Robust Habit - Landing Page da Academia
 
+<image src='./.github/preview.png'/>
+
 Bem-vindo ao repositório do projeto Robust Habit, uma landing page da academia que busca promover um estilo de vida saudável e ativo. Este projeto foi desenvolvido utilizando as tecnologias React, Next.js e Tailwind CSS para proporcionar uma experiência de usuário moderna e responsiva. 
 
 ### Confira o deploy do projeto [Link](https://robust-habit-one.vercel.app)
