@@ -32,7 +32,7 @@ export function ModalContent() {
           <Button className="w-64 bg-blue-500 justify-start">
             <div className="bg-white p-1">
               <Image
-                className="w-[36px] max-sm:w-[20px] max-md:w-[28px]"
+                className="w-[36px] max-sm:w-[22px] max-md:w-[28px] max-lg:w-[30px]"
                 src={googleIcon}
                 alt=""
               />

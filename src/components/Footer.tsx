@@ -28,7 +28,7 @@ export function Footer() {
         <div>
           <Logo />
           <div className="mt-9 max-sm:mt-4">
-            <Text>143 your coffee shop address goes here, New York</Text>
+            <Text>143 your academy address goes here, New York</Text>
             <Text>Call: +00 123 456 789</Text>
             <Text>Email: info@robust-habit.com</Text>
             <Text>Web: www.robust-habit.com</Text>

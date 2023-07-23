@@ -27,12 +27,11 @@ export default function Home() {
   return (
     <>
       <main id="about">
+        <Header />
         <Container section>
-          <Header />
-
           <div
             id="top"
-            className="grid grid-cols-2 gap-16 items-center max-lg:gap-2 max-md:grid-cols-1 pt-[70px]"
+            className="grid grid-cols-2 gap-16 items-center max-lg:gap-2 max-md:grid-cols-1 pt-[80px]"
           >
             <div>
               <Head className="max-lg:text-[3.5rem]">

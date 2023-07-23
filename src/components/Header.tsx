@@ -3,6 +3,7 @@
 import { NavBar } from './NavBar'
 import { Logo } from './Logo'
 import { useEffect, useState } from 'react'
+import { Container } from './Container'
 
 export function Header() {
   const [distance, setDistance] = useState(0)
@@ -25,12 +26,14 @@ export function Header() {
 
   return (
     <header
-      className={`flex items-center justify-between w-full pt-4 max-md:px-4 max-md:fixed max-md:-ml-4 max-md:h-[65px] max-md:pt-0 max-md:z-50${
-        distance < -60 ? ' max-md:backdrop-blur-md max-md:bg-white/30' : ''
+      className={`w-full pt-4 max-lg:px-4 fixed  py-2 max-md:z-50${
+        distance < -60 ? ' backdrop-blur-md bg-white/30' : ''
       } `}
     >
-      <Logo />
-      <NavBar />
+      <Container className="flex items-center justify-between max-lg:px-0">
+        <Logo />
+        <NavBar />
+      </Container>
     </header>
   )
 }
