@@ -9,5 +9,5 @@ body {
 }
 
 html {
-  @apply max-md:text-[12px]
+  @apply max-sm:text-[10px] max-md:text-[12px] max-lg:text-[14px] scroll-smooth
 }
